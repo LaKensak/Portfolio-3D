@@ -6,7 +6,7 @@ import CanvasLoader from "../component/CanvasLoader.jsx";
 import Developper from "../component/Developper.jsx";
 
 const Experience = () => {
-    const [annimationNom, setannimationNom] = useState('idle')
+    const [animationName, setanimationName] = useState('idle')
 
     return (
         <section className="c-space my-20" id="work">
@@ -22,7 +22,7 @@ const Experience = () => {
                             <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2}/>
 
                             <Suspense fallback={<CanvasLoader/>}>
-                                <Developper position-y={-3} scale={3} annimationNom={annimationNom}/>
+                                <Developper position-y={-3} scale={3} animationName={animationName}/>
                             </Suspense>
                         </Canvas>
                     </div>
@@ -32,9 +32,9 @@ const Experience = () => {
                             {workExperiences.map((item, index) => (
                                 <div
                                     key={index}
-                                    onClick={() => setannimationNom(item.animation.toLowerCase())}
-                                    onPointerOver={() => setannimationNom(item.animation.toLowerCase())}
-                                    onPointerOut={() => setannimationNom('idle')}
+                                    onClick={() => setanimationName(item.animation.toLowerCase())}
+                                    onPointerOver={() => setanimationName(item.animation.toLowerCase())}
+                                    onPointerOut={() => setanimationName('idle')}
                                     className="work-content_container group">
                                     <div className="flex flex-col h-full justify-start items-center py-2">
                                         <div className="work-content_logo">
