@@ -1,7 +1,7 @@
 import {useAnimations, useFBX, useGLTF} from '@react-three/drei'
 import {useEffect, useRef} from "react";
 
-const Developper = ({ annimationNom = 'idle', ...props}) => {
+const Developper = ({ animationName = 'idle', ...props}) => {
 
     const group = useRef()
     const {nodes, materials} = useGLTF('/models/66eca456f6688f4c9ec3bdf1.glb')
@@ -22,9 +22,9 @@ const Developper = ({ annimationNom = 'idle', ...props}) => {
     );
 
     useEffect(() => {
-        actions[annimationNom].reset().fadeIn(0.5).play();
-        return () => actions[annimationNom].fadeOut(0.5);
-    }, [annimationNom]);
+        actions[animationName].reset().fadeIn(0.5).play();
+        return () => actions[animationName].fadeOut(0.5);
+    }, [animationName]);
 
     return (
         <group {...props} dispose={null} ref={group}>
