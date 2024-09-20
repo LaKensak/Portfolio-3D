@@ -12,7 +12,7 @@ export const navLinks = [
     {
         id: 3,
         name: 'Compétence',
-        href: '#work',
+        href: '#skills',
     },
     {
         id: 4,
@@ -292,3 +292,34 @@ export const workExperiences = [
         animation: 'salute',
     },
 ];
+
+
+export const workSkills = [
+    {
+        id: 1,
+        name: 'Python',
+        pos: '',
+        duration: '',
+        title: "Débutant en Python, je possède une solide base en algorithmique et je suis actuellement en train de renforcer mes compétences en développement en explorant les concepts fondamentaux du langage et les bonnes pratiques de programmation.",
+        icon: '/assets/python.png',
+        animation: 'victory',
+    },
+    {
+        id: 2,
+        name: 'JavaScript',
+        pos: '',
+        duration: '',
+        title: "Débutant en JavaScript, j'ai acquis une solide maîtrise des bases et commencé à développer des sites web. Je me forme également à la programmation orientée objet, notamment avec les classes et les objets, et j'ai récemment commencé à explorer le framework React pour créer des interfaces utilisateur dynamiques.",
+        icon: '/assets/JS.png',
+        animation: 'clapping',
+    },
+    {
+        id: 3,
+        name: 'SQL',
+        pos: '',
+        duration: '',
+        title: "Débutant en SQL, je maîtrise les notions de base, notamment les jointures (INNER, LEFT, RIGHT, OUTER). J'ai également commencé à explorer les fonctions et les triggers pour gérer et manipuler les données de manière plus efficace.",
+        icon: '/assets/SQL.png',
+        animation: 'salute',
+    },
+]
