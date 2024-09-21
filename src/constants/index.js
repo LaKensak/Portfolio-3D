@@ -319,7 +319,7 @@ export const workSkills = [
         pos: '',
         duration: '',
         title: "Débutant en SQL, je maîtrise les notions de base, notamment les jointures (INNER, LEFT, RIGHT, OUTER). J'ai également commencé à explorer les fonctions et les triggers pour gérer et manipuler les données de manière plus efficace.",
-        icon: '/assets/SQL.png',
+        icon: '/assets/sql.png',
         animation: 'salute',
     },
 ]
