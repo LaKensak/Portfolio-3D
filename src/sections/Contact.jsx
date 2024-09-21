@@ -77,7 +77,7 @@ const Contact = () => {
                                     onChange={GererChangement}
                                     required
                                     className="field-input"
-                                    placeholder="Michael Sping"
+                                    placeholder="Jean Dupont"
                                 />
 
                             </label>
@@ -90,7 +90,7 @@ const Contact = () => {
                                     onChange={GererChangement}
                                     required
                                     className="field-input"
-                                    placeholder="MichaelSping@gmail.com"
+                                    placeholder="jean-dupont@gmail.com"
                                 />
 
                             </label>
